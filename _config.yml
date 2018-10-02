@@ -125,6 +125,11 @@ menu:
   # sitemap: /sitemap.xml || sitemap
   commonweal: /404.html || heartbeat
 
+# 打赏
+reward_comment: 欣赏这篇文章？您的支持将更加鼓励我继续创作！
+wechatpay: /images/wechatpay.png
+alipay: /images/alipay.jpg
+
 # Enable/Disable menu icons / item badges.
 menu_settings:
   icons: true

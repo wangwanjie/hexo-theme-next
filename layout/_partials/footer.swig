@@ -40,7 +40,7 @@
 
 {% if theme.footer.powered.enable %}
   <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://hexo.io">Hexo</a>') }}{% if theme.footer.powered.version %} v{{ hexo_env('version') }}{% endif %}{#
+  #}{{ __('footer.powered', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://hexo.io">Hexo</a>') }} 从❤️出发 {% if theme.footer.powered.version %} v{{ hexo_env('version') }}{% endif %}{#
 #}</div>
 {% endif %}
 

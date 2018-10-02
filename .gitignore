@@ -21,3 +21,4 @@ source/lib/ua-parser-js/*
 
 !source/lib/velocity/
 !source/lib/reading_progress/
+!source/lib/fancybox/

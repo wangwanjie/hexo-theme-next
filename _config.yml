@@ -485,8 +485,8 @@ disqus:
 # changyan
 changyan:
   enable: false
-  appid:
-  appkey:
+  appid: cysUmcAOu
+  appkey: 60c039c0f0f51ed2bd6cba7d771c7d90
 
 
 # Valine.
@@ -506,7 +506,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80MDA5MC8xNjYxNw==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/

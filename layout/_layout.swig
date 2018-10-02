@@ -97,6 +97,8 @@
   {% include '_scripts/vendors.swig' %}
   {% include '_scripts/commons.swig' %}
 
+  {% include '_scripts/change_banner_image.swig' %} // 增加这一行
+
   {% set scheme_script = '_scripts/schemes/' + theme.scheme | lower + '.swig' %}
   {% include scheme_script %}
 

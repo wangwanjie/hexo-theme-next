@@ -125,11 +125,6 @@ menu:
   # sitemap: /sitemap.xml || sitemap
   commonweal: /404.html || heartbeat
 
-# 打赏
-reward_comment: 欣赏这篇文章？您的支持将更加鼓励我继续创作！
-wechatpay: /images/wechatpay.png
-alipay: /images/alipay.jpg
-
 # Enable/Disable menu icons / item badges.
 menu_settings:
   icons: true
@@ -320,10 +315,10 @@ codeblock:
   #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
   #description: ex. subscribe to my blog by scanning my public wechat account
 
-# Reward
-#reward_comment: Donate comment here
-#wechatpay: /images/wechatpay.jpg
-#alipay: /images/alipay.jpg
+# 打赏
+reward_comment: 对你有帮助？您的支持将更加鼓励我继续创作！
+wechatpay: /images/wechatpay.png
+alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
 # Related popular posts
@@ -371,14 +366,13 @@ custom_logo:
   enabled: false
   image:
 
-# Code Highlight theme
+# 代码高亮主题
 # Available values: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 # Enable "cheers" for archive page.
 cheers_enabled: true
-
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -501,7 +495,6 @@ changyan:
   appid: cysUmcAOu
   appkey: 60c039c0f0f51ed2bd6cba7d771c7d90
 
-
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
@@ -580,7 +573,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-93918217-1
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/

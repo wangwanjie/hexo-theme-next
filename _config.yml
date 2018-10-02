@@ -158,12 +158,17 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
+
+
+social:
+  GitHub: https://github.com/wangwanjie || github
+  Twitter: https://twitter.com/wangwanjie || twitter
+  微博: http://www.weibo.com/2406245873/profile?topnav=1&wvr=6 || weibo
+  Facebook: https://www.facebook.com/wangwanjie123 || facebook
+  QQ: http://wpa.qq.com/msgrd?v=3&uin=396736694&site=qq&menu=yes || qq
+
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
@@ -173,7 +178,7 @@ site_state: true
 social_icons:
   enable: true
   icons_only: false
-  transition: false
+  transition: true
   # Dependencies: exturl: true in Tags Settings section below.
   # To encrypt links above use https://www.base64encode.org
   # Example encoded link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`
@@ -187,11 +192,14 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
+links_title: 友情链接
 links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+# links_layout: inline
+links:
+  泊学网: https://boxueio.com
+  锤子科技: http://www.smartisan.com/
+  ObjC中国: https://objccn.io/
+  Swift evolution: https://github.com/apple/swift-evolution
 
 # Sidebar Avatar
 avatar:

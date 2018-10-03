@@ -228,8 +228,6 @@ toc:
 sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
   position: left
-  #position: right
-
   # Manual define the sidebar width.
   # If commented, will be default for:
   # Muse | Mist: 320
@@ -302,7 +300,7 @@ symbols_count_time:
 codeblock:
   # Manual define the border radius in codeblock
   # Leave it empty for the default 1
-  border_radius:
+  border_radius: 5
   # Add copy button on codeblock
   copy_button:
     enable: false
@@ -700,7 +698,7 @@ algolia_search:
   hits:
     per_page: 10
   labels:
-    input_placeholder: Search for Posts
+    input_placeholder: 搜索文章
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
 

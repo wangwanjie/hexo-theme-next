@@ -1,4 +1,44 @@
 // Custom styles.
+// 整个网页加背景图，如果只启用头部，则打开 banner image，注释这段
+body {
+    background:url(https://source.unsplash.com/random/1600x900);
+    // background-repeat: no-repeat;
+    background-repeat: round;
+    background-attachment:fixed;
+    background-position:0% 0%;
+}
+
+.main-inner {
+    margin-top: 60px;
+    padding: 60px 60px 60px 60px;
+    background: #fff;
+    opacity: 0.8;
+    min-height: 500px;
+}
+
+// 去除 header，footer 背景色
+.footer, .header {
+  background: transparent;
+  color: #fff;
+}
+
+.footer-inner .theme-link {
+  color: #EEE;
+}
+
+.footer-inner .fa-heart {
+  color: red;
+}
+
+// banner image
+// .header {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s1.ax1x.com/2018/06/09/CbDIIO.jpg") no-repeat;
+//     background-size: cover;
+//     background-color: black;
+//     background-position: center;
+//     width: 100%;
+//     display: table;
+// }
 
 // 主页文章添加阴影效果
  .page-home .post {
@@ -20,16 +60,6 @@
     color: #0477ab;
     text-decoration: underline;
   }
-}
-
-// banner image
-.header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s1.ax1x.com/2018/06/09/CbDIIO.jpg") no-repeat;
-    background-size: cover;
-    background-color: black;
-    background-position: center;
-    width: 100%;
-    display: table;
 }
 
 // 副标题字颜色

@@ -2,10 +2,9 @@
 // 整个网页加背景图，如果只启用头部，则打开 banner image，注释这段
 body {
     background:url(https://source.unsplash.com/random/1600x900);
-    // background-repeat: no-repeat;
-    background-repeat: round;
-    background-attachment:fixed;
-    background-position:0% 0%;
+    background-attachment: fixed; // 不随屏幕滚动而滚动
+    background-repeat: repeat; // 如果背景图不够屏幕大小则重复铺，改为no-repeat则表示不重复铺
+    background-size: contain; // 等比例铺满屏幕
 }
 
 .main-inner {
@@ -24,10 +23,6 @@ body {
 
 .footer-inner .theme-link {
   color: #EEE;
-}
-
-.footer-inner .fa-heart {
-  color: red;
 }
 
 // banner image

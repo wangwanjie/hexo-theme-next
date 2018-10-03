@@ -1,13 +1,17 @@
 // Custom styles.
 
 // 主页文章添加阴影效果
- .post {
+ .page-home .post {
    margin-top: 40px;
    margin-bottom: 40px;
    padding: 20px;
    -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
    -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
-  }
+}
+
+.page-home .posts-expand {
+    padding-top: 10px;
+}
 
 .post-body p a {
     color: #0593d3;
@@ -18,6 +22,7 @@
   }
 }
 
+// banner image
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s1.ax1x.com/2018/06/09/CbDIIO.jpg") no-repeat;
     background-size: cover;
@@ -27,22 +32,51 @@
     display: table;
 }
 
-.site-subtitle {
+// 副标题字颜色
+.site-subtitle, .site-nav a, span.exturl, .site-brand-wrapper .brand {
   color: #FFFFFF;
 }
 
-.site-nav a, span.exturl {
-    color: #FFFFFF;
-  }
-
+// 调整 banner 内边距
 .header-inner {
   padding: 50px 0 30px;
 }
 
-.posts-expand {
-    padding-top: 10px;
-}
-
 .sidebar-toggle {
   left :30px;
+}
+
+// 导航栏菜单激活背景色
+.menu .menu-item a:hover, .menu-item-active a {
+  background: #555;
+}
+
+// 站名上下线条色
+.logo-line-before i, .logo-line-after i {
+  background:  #FFF;
+}
+
+// 阅读更多调整居中加 border
+.post-body .post-button {
+      text-align: center;
+}
+
+.post-body .post-button a {
+  padding: 0px 10px;
+  border: 2px solid #666;
+}
+
+// 分页页码居中
+.footer-inner, .posts-expand .post-tags, .pagination {
+  text-align: center;
+}
+
+// 边栏背景色
+.sidebar {
+  background: #111;
+}
+
+// 文章页 magin
+.posts-expand .post, .post {
+  margin-top: 0px;
 }

@@ -768,7 +768,6 @@ reading_progress:
   color: "#0000CD"
   height: 2px
 
-
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -828,11 +827,11 @@ pace: false
 # pace_theme: pace-theme-center-simple
 pace_theme: pace-theme-minimal
 
-# Canvas-nest
+# Canvas-nest 动画背景
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest: false
 
-# JavaScript 3D library.
+# JavaScript 3D library. 3D 效果
 # Dependencies: https://github.com/theme-next/theme-next-three
 # three_waves
 three_waves: false
@@ -841,7 +840,7 @@ canvas_lines: false
 # canvas_sphere
 canvas_sphere: false
 
-# Only fit scheme Pisces
+# Only fit scheme Pisces canvas背景彩带
 # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
 # Canvas-ribbon
 # size: The width of the ribbon.
@@ -853,7 +852,7 @@ canvas_ribbon:
   alpha: 0.6
   zIndex: -1
 
-# Script Vendors.
+# Script Vendors. 自定义 js
 # Set a CDN address for the vendor you want to customize.
 # For example
 #    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
@@ -958,9 +957,6 @@ vendors:
 
 mouse_click_love:
   enable: true
-
-background_animation:
-  enable: false
 
 # Assets
 css: css

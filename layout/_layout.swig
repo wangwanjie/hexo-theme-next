@@ -97,7 +97,7 @@
   {% include '_scripts/vendors.swig' %}
   {% include '_scripts/commons.swig' %}
 
-  {% include '_scripts/change_banner_image.swig' %} // 增加这一行
+  {% include '_scripts/change_banner_image.swig' %}
 
   {% set scheme_script = '_scripts/schemes/' + theme.scheme | lower + '.swig' %}
   {% include scheme_script %}
@@ -119,10 +119,16 @@
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/bookmark.swig' %}
   {% include '_third-party/copy-code.swig' %}
-  <!-- 页面点击小红心 -->
-  <script type="text/javascript" src="/js/src/love.js"></script>
-  <!-- 背景动画 -->
-  <script type="text/javascript" src="/js/src/particle.js"></script>
+
+  {% if theme.mouse_click_love and theme.mouse_click_love.enable %}
+      <!-- 页面点击小红心 -->
+      <script type="text/javascript" src="/js/src/love.js"></script>
+  {% endif %}
+
+  {% if theme.background_animation and theme.background_animation.enable %}
+      <!-- 背景动画 -->
+      <script type="text/javascript" src="/js/src/particle.js"></script>
+  {% endif %}
 
 </body>
 </html>

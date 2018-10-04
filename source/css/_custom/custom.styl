@@ -1,40 +1,4 @@
 // Custom styles.
-// 整个网页加背景图，如果只启用头部，则打开 banner image，注释这段
-body {
-    background:url(https://source.unsplash.com/random/1600x900);
-    background-attachment: fixed; // 不随屏幕滚动而滚动
-    background-repeat: repeat; // 如果背景图不够屏幕大小则重复铺，改为no-repeat则表示不重复铺
-    background-size: contain; // 等比例铺满屏幕
-}
-
-.main-inner {
-    margin-top: 60px;
-    padding: 60px 60px 60px 60px;
-    background: #fff;
-    opacity: 0.8;
-    min-height: 500px;
-}
-
-// 去除 header，footer 背景色
-.footer, .header {
-  background: transparent;
-  color: #fff;
-}
-
-.footer-inner .theme-link {
-  color: #EEE;
-}
-
-// banner image
-// .header {
-//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s1.ax1x.com/2018/06/09/CbDIIO.jpg") no-repeat;
-//     background-size: cover;
-//     background-color: black;
-//     background-position: center;
-//     width: 100%;
-//     display: table;
-// }
-
 // 主页文章添加阴影效果
  .page-home .post {
    margin-top: 40px;
@@ -154,6 +118,7 @@ body {
 @media (max-width: 767px) {
   .container .main-inner {
     padding: 20px 0px;
+    margin-top: 10px;
   }
   .header-inner {
     padding: 50px 0 0px;
@@ -163,5 +128,11 @@ body {
   }
   .site-meta {
     margin-left: 40px;
+  }
+  .posts-expand {
+    margin: 0 10px;
+  }
+  .page-home .post {
+    padding: 10px;
   }
 }

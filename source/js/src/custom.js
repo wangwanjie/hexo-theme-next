@@ -20,6 +20,44 @@
         }(),
         language: (navigator.browserLanguage || navigator.language).toLowerCase()
     }
+    function settingBackground () {
+        if (browser.versions.mobile) {
+            $('.header').css({
+                'background': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s1.ax1x.com/2018/06/09/CbDIIO.jpg") no-repeat',
+                'background-size': 'cover',
+                'background-color': 'black',
+                'background-position': 'center',
+                'width': '100%',
+                'display': 'table'
+            })
+
+            $('.site-nav-toggle .btn-bar').css('background', '#fff');
+        } else {
+            $('body').css({
+                'background': 'url(https://source.unsplash.com/random/1600x900)',
+                'background-attachment': 'fixed',
+                'background-repeat': 'repeat',
+                'background-size': 'contain'
+            });
+            $('.main-inner').css({
+                'margin-top': '60px',
+                'padding': '60px 60px 0px 60px',
+                'background': '#fff',
+                'opacity': '0.8',
+                'min-height': '500px'
+            });
+            $('.header').css({
+                'background': 'transparent',
+                'color': '#fff'
+            });
+            $('.footer').css({
+                'background': 'transparent',
+                'color': '#fff'
+            });
+
+            $('.footer-inner .theme-link').css('color', '#EEE');
+        }
+    }
     if (browser.versions.mobile) {
         var headerStr = '<div class="site-nav-toggle">' +
             '    <button aria-label="切换导航栏">' +
@@ -40,4 +78,6 @@
             '  </div>';
         $('.header .site-brand-wrapper').html(headerStr);
     }
+    // 设置背景
+    settingBackground();
 }(window, document);

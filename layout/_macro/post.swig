@@ -73,9 +73,14 @@
 
         <div class="post-meta">
           <span class="post-time">
+            {% if page.update_date %}
+              {% set date_diff = date(post.date) != date(page.update_date) %}
+              {% set time_diff = time(post.date) != time(page.update_date) %}
+            {% else %}
+              {% set date_diff = date(post.date) != date(post.updated) %}
+              {% set time_diff = time(post.date) != time(post.updated) %}
+            {% endif %}
 
-            {% set date_diff = date(post.date) != date(post.updated) %}
-            {% set time_diff = time(post.date) != time(post.updated) %}
             {% set datetime_diff = date_diff or time_diff %}
 
             {% if theme.post_meta.created_at %}
@@ -88,7 +93,7 @@
 
               {% if !date_diff && time_diff && theme.post_meta.updated_at.enabled && theme.post_meta.updated_at.another_day %}
                 {% if page.update_date %}
-                  {% set create_title = __('post.created') + __('symbol.colon') + full_date(post.date) + ' / ' + __('post.modified') + __('symbol.colon') + time(post.update_date) %}
+                  {% set create_title = __('post.created') + __('symbol.colon') + full_date(post.date) + ' / ' + __('post.modified') + __('symbol.colon') + time(page.update_date) %}
                 {% else %}
                   {% set create_title = __('post.created') + __('symbol.colon') + full_date(post.date) + ' / ' + __('post.modified') + __('symbol.colon') + time(post.updated) %}
                 {% endif %}
@@ -116,8 +121,8 @@
                   <span class="post-meta-item-text">{{ __('post.edited') }}</span>
                 {% endif %}
 
-                {% if page.update_date %}
-                  <time title="{{ __('post.modified') + __('symbol.colon') + full_date(page.update_date) }}" itemprop="dateModified" datetime="{{ moment(page.update_date).format() }}">{#
+                {% if post.update_date %}
+                  <time title="{{ __('post.modified') + __('symbol.colon') + full_date(post.update_date) }}" itemprop="dateModified" datetime="{{ moment(post.update_date).format() }}">{#
                   #}{{ date(post.update_date) -}}
                 {% else %}
                   <time title="{{ __('post.modified') + __('symbol.colon') + full_date(post.updated) }}" itemprop="dateModified" datetime="{{ moment(post.updated).format() }}">{#
